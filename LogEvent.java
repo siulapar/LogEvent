@@ -31,8 +31,7 @@ public class LogEvent {
 			String nowString = DateFormat.getDateTimeInstance(
 		            DateFormat.MEDIUM, DateFormat.SHORT).format(new Date());
 			out.write('[' + nowString + "] " + msg + "\r\n");
-			out.close();
-			
+						
 		} catch (Exception e) {
 			System.err.println("ERROR: " + e.getMessage());
 		}
